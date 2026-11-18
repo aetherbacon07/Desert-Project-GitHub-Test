@@ -160,7 +160,7 @@ Maybe there&#39;s something inside your backpack that you can use?
 
 (text-colour: yellow)[[Check Supplies]]</tw-passagedata><tw-passagedata pid="5" name="Try to Find your Bearings" tags="" position="700,325" size="100,100">You decide you need to figure out where you are. Where&#39;s your phone? Do you have it?
 
-(text-colour: yellow)[? ](text-colour:yellow)(link-goto: &quot;! Check your pockets&quot;, (either: &quot;You have it&quot;, &quot;You don&#39;t have it&quot;))</tw-passagedata><tw-passagedata pid="6" name="Walking" tags="" position="425,450" size="100,100">Walking true to your direction (or maybe in a circle? it&#39;s hard to tell), you catch a scent on the gentle breeze. 
+(text-colour: yellow)[? ](text-colour:yellow)(link-goto: &quot;Check your pockets&quot;, (either: &quot;You have it&quot;, &quot;You don&#39;t have it&quot;))</tw-passagedata><tw-passagedata pid="6" name="Walking" tags="" position="425,450" size="100,100">Walking true to your direction (or maybe in a circle? it&#39;s hard to tell), you catch a scent on the gentle breeze. 
 It smells nice.
 Like greenery, and something fresh. Slightly sweet. Like vegetation. Or maybe your mom&#39;s bathroom. 
 You decide to follow it. It could be water, it could be a person with a really avant garde taste in perfumery. Either way, its more something than all these rocks and dry desert shrubs. You follow your nose across the sand to a small oasis, with palm trees and other lush shrubbery around the waters edge. Comeing up to the shore something makes you take pause. 
@@ -316,13 +316,26 @@ You see a few landmarks around you that look promising.
 
 Shoot.
 
-Your backpack isn&#39;t made out of the right material to attempt this fix. You unzip it, and lay the hankerchief out over the bottom to cover the hole. The most you can do for now is walk slowly and carefully, and try not to jostle the loose hankerchief out of place. Speaking of walking, you can&#39;t afford to stay here any longer. The sun is rising even higher now, and the heat is becoming unbearable. You need to find a place to rest and wait out the worst of the day. Your throat is so dry, and you are sweating non-stop.
+Your backpack isn&#39;t made out of the right material to attempt this fix. You unzip it, and lay the hankerchief out over the bottom to cover the hole. The most you can do for now is walk slowly and carefully, and try not to jostle the loose hankerchief out of place. Speaking of walking, you can&#39;t afford to stay here any longer. 
+
+The sun is rising even higher now, and the heat is becoming unbearable. You need to find a place to rest and wait out the worst of the day. Your throat is dry like sandpaper, and you are sweating non-stop out here.
 
 (text-colour:#d0bfff)[Do you...]
 
 
 (text-color: cyan)[[Prioritize Finding Water]] 2 (text-colour: yellow)[? ] event
-(text-color: cyan)[[Prioritize Finding Shade]] 1 (text-colour: yellow)[? ] event</tw-passagedata><tw-passagedata pid="24" name="Prioritize Finding Water" tags="" position="1000,600" size="100,100">You need something to drink like, 30 minutes ago. Plus where there&#39;s water there&#39;s plants, where there&#39;s plants there&#39;s shade right? it&#39;s basically two birds, one stone. The bigger question here is, how do you plan to find water. Hm. That&#39;s the harder question too. As you stop to think, something catches your attention.
+(text-color: cyan)[[Prioritize Finding Shade]] 1 (text-colour: yellow)[? ] event</tw-passagedata><tw-passagedata pid="24" name="Prioritize Finding Water" tags="" position="1000,600" size="100,100">You need something to drink like, 30 minutes ago. 
+Plus where there&#39;s water there&#39;s plants, where there&#39;s plants there&#39;s shade right? it&#39;s basically two birds, one stone. 
+The bigger question here is, how do you plan to find water. 
+
+
+Hm. 
+
+
+That&#39;s the harder question too.
+
+
+As you stop to think, something catches your attention.
 
 
 (text-colour:#8ce99a)[[! -&gt;Birds]]</tw-passagedata><tw-passagedata pid="25" name="Prioritize Finding Shade" tags="" position="950,900" size="100,100">You need to get out of the heat. 
@@ -395,13 +408,13 @@ Before you can even sit up straight, the fox grabs the body of the mouse from th
 (else-if: $caveBat is true)+(text-color: cyan)[[[Continue On Your Path -&gt;Cave at Night]]]
 (else-if: $groundWater is true)+(text-color: cyan)[[[Continue On Your Path -&gt;Dunes at Night]]]
 (else-if: $pricklyPear is true)+(text-color: cyan)[[[Continue On Your Path -&gt;Field at Night]]]
-(else-if: $riverBank is true)+(text-color: cyan)[[[Continue On Your Path -&gt;Riverbank at Night]]]</tw-passagedata><tw-passagedata pid="34" name="Oasis at Night" tags="" position="575,1600" size="100,100">A short nap later, the sun has finally begun to set. You take a few more dates for later, and survey the area around the oasis. You see something nearby a stray palm. It&#39;s the small fox from earlier. 
+(else-if: $riverBank is true)+(text-color: cyan)[[[Continue On Your Path -&gt;Riverbank at Night]]]</tw-passagedata><tw-passagedata pid="34" name="Oasis at Night" tags="" position="575,1475" size="100,100">A short nap later, the sun has finally begun to set. You take a few more dates for later, and survey the area around the oasis. You see something nearby a stray palm. It&#39;s the small fox from earlier. 
 
-Laying sprawled out. 
+(text-colour:orange)[Laying sprawled out. 
 
 Eyes open. 
 
-There&#39;s a little blood at the corner of its mouth. 
+There&#39;s a little blood at the corner of its mouth. ]
 
 You frown and back away, trying to get the image out of your mind. You didn&#39;t mean to. Right. 
 Yes. 
@@ -420,8 +433,8 @@ Well, you have it now.
 You look around for shrubs, following them. The vegetation starts to get more abundant as you go too. 
 That&#39;s a good sign that gives you more motivation. Eventually you reach the bank of a small stream. It seems like the stream gets wider up ahead, so your best bet at finding a town is probably to travel upstream. 
 So you start walking.
-This stream is a great source of water too, so you stop for a second to fill your water bottle. 
-You can boil this over your campfire later when it gets too cold to continue.
+This stream is a welcome source of water too, so you stop for a second to fill your water bottle, using your hankerchief to filter the river sediments.
+You can boil this over a campfire later when it gets too cold to continue.
 
 
 (text-color: cyan)[[Keep Moving -&gt;Walking From Oasis]]</tw-passagedata><tw-passagedata pid="35" name="Cave at Night" tags="" position="850,1475" size="100,100">You managed to get some rest earlier, despite your discomfort. 
@@ -430,8 +443,8 @@ Dusk has finally arrived, and you begin to pack up your things. You notice that 
 Well, except for one. 
 
 
-One has been left behind, and it seems.. 
-Not right. 
+(text-colour:orange)[One has been left behind, and it seems.. 
+Not right. ]
 
 
 
@@ -499,10 +512,9 @@ You are definitely not embarrassed.
 You shake yourself out of your reminiscence, and begin to survey the river itself. It&#39;s wide and steady, and doesn&#39;t seem to taper noticeably as far as you can tell from your field of vision. You try to rack your brain for  another survival tip, maybe something you remember from a class, or a useful tidbit from a book you were half paying attention to --
 Something about civilizations on rivers??
 Your brain is conjuring nothing but useless internet jokes about Mesopotamia. 
-Well, flip a coin, I guess. A metaphorical one. 
-You didn&#39;t bring any quarters.
+Well, flip a coin, I guess. A metaphorical one -- you didn&#39;t bring any quarters.
 
-Rivers usually flow to the sea don&#39;t they? So downstream it is. You follow the river&#39;s edge carefully as the sun sets lower. You keep a wide enough distance to not encroach on any animals drinking from the other side, while keeping your eyes out for anything in the distance that might be looking at you like a walking chicken drumstick. You squint, trying to keep your eyes out of the harsh gleam of the sun on the horizon. Maybe this ought to teach you to start bringing sunglasses for more occassions other than themed parties. You take out your pen light as well, to help with the visibility around your feet. It&#39;s not exactly a flood light but making sure you don&#39;t fall flat on your face is surely better than not.
+Rivers usually flow to the sea don&#39;t they? So downstream it is. You follow the river&#39;s edge carefully as the sun sets lower. You keep a wide enough distance to not encroach on any animals drinking from the other side, while keeping your eyes out for anything in the distance that might be looking at you like a walking chicken drumstick. You squint, trying to keep your eyes out of the harsh gleam of the sun on the horizon. Maybe this ought to teach you to start bringing sunglasses for more occassions other than themed parties. You take out your penlight as well, to help with the visibility around your feet. It&#39;s not exactly a flood light but making sure you don&#39;t fall flat on your face is surely better than not.
 You settle into a gentle rhythm and try not to let boredom consume you. 
 You might be walking for a long time.
 
@@ -527,7 +539,7 @@ At least you&#39;re doing something about it! A //real// idiot would give up and
 Yeah, okay, just remember to look up every once in a while to see where you&#39;re headed, Indiana Jones.
 
 
-(text-color: cyan)[[Keep Moving -&gt;Stream from Dunes]]</tw-passagedata><tw-passagedata pid="40" name="Night Dunes no Compass" tags="" position="425,1600" size="100,100">(text-colour:#ff8787)[You have ABSOLUTELY no idea where you&#39;re going.] 
+(text-color: cyan)[[Keep Moving -&gt;Stream from Dunes]] 1 (text-color: yellow)[?] event</tw-passagedata><tw-passagedata pid="40" name="Night Dunes no Compass" tags="" position="425,1600" size="100,100">(text-colour:#ff8787)[You have ABSOLUTELY no idea where you&#39;re going.] 
 Navigating by the stars is unfortunately not a survival skill that your cushy white-collar bloodline has passed on to you.
 Have you passed that rock before? 
 
@@ -550,11 +562,10 @@ You do have a small moment of heightened intelligence, shining your pen light ba
 Okay, that&#39;s good, at least you don&#39;t have to worry about leaving breadcrumbs or something. And no circling means you are moving somewhere. Okay, we can work with this. Just gotta keep moving.
 
 
-(text-color: cyan)[[Keep Going -&gt;Stream from Dunes]]</tw-passagedata><tw-passagedata pid="41" name="Wolf Pack" tags="" position="725,1600" size="100,100">Holy crap thats a freaking wolf. Scratch that, thats definitely more than one wolf. Since WHEN have wolves lived in the desert? Wolves live in forests, and mountainous areas, and the occasional Canadian suburban neighborhood -- NOT in the desert. This feels very wrong according to everything you&#39;ve ever learned about deserts. Deserts are full of- of- tumbleweeds, and cool freaky lizards, and sometimes like big cats- lions and stuff- NOT WOLVES. What&#39;s next, is there a desert bear or something?? //Please// don&#39;t let that be true. You&#39;ve probably been standing too long. But the small group of wolves doesn&#39;t seem to be particularly agressive. Bold statement to make about a group of wolves that you didn&#39;t think existed approximately 10 seconds ago. But they aren&#39;t growling, or stalking you, just staring. You take a step foward. Stupid. But they back away. Okay, this goes against what you&#39;ve been taught about wolves too. Aren&#39;t they supposed to be in a defensive position, or like, trying to turn you into lunch? Well, maybe werewolf media isn&#39;t the most accurate source of information either. You step forward again, and they scatter away back into the desert. Timid. Huh. Well, considering you were half prepared to fight for your life barehanded against a pack of wolves, this outcome is much more welcome. It feels almost awkward to keep moving in lue of a close wolf encounter, but practicality wins you over. You have to use the night while you have it, especially since it will get uncomfortably cold during the middle of the night, especially with the river cooling the air. You keep moving upstream. More carefully.
+(text-color: cyan)[[Keep Going -&gt;Stream from Dunes]] 1 (text-color: yellow)[?] event</tw-passagedata><tw-passagedata pid="41" name="Wolf Pack" tags="" position="725,1600" size="100,100">Holy crap thats a freaking wolf. Scratch that, thats definitely more than one wolf. Since WHEN have wolves lived in the desert? Wolves live in forests, and mountainous areas, and the occasional Canadian suburban neighborhood -- NOT in the desert. This feels very wrong according to everything you&#39;ve ever learned about deserts. Deserts are full of- of- tumbleweeds, and cool freaky lizards, and sometimes like big cats- lions and stuff- NOT WOLVES. What&#39;s next, is there a desert bear or something?? //Please// don&#39;t let that be true. You&#39;ve probably been standing too long. But the small group of wolves doesn&#39;t seem to be particularly agressive. Bold statement to make about a group of wolves that you didn&#39;t think existed approximately 10 seconds ago. But they aren&#39;t growling, or stalking you, just staring. You take a step foward. Stupid. But they back away. Okay, this goes against what you&#39;ve been taught about wolves too. Aren&#39;t they supposed to be in a defensive position, or like, trying to turn you into lunch? Well, maybe werewolf media isn&#39;t the most accurate source of information either. You step forward again, and they scatter away back into the desert. Timid. Huh. Well, considering you were half prepared to fight for your life barehanded against a pack of wolves, this outcome is much more welcome. It feels almost awkward to keep moving in lue of a close wolf encounter, but practicality wins you over. You have to use the night while you have it, especially since it will get uncomfortably cold during the middle of the night, especially with the river cooling the air. You keep moving upstream. More carefully.
 
 
-(if: $hasCompass is true)+(text-color: cyan)[[[Travel Upstream -&gt;Upstream River with Compass]]]
-(else:)+(text-color: cyan)[[[Travel Upstream -&gt;Upstream River No Compass]]]</tw-passagedata><tw-passagedata pid="42" name="Journey from Cliffs with Compass" tags="" position="850,1600" size="100,100">(text-colour:#b2f2bb)[On the ground, you suddenly remember you had packed a compass in your bag.] 
+(text-color: cyan)[[Travel Upstream -&gt;Upstream River Night]]</tw-passagedata><tw-passagedata pid="42" name="Journey from Cliffs with Compass" tags="" position="850,1600" size="100,100">(text-colour:#b2f2bb)[On the ground, you suddenly remember you had packed a compass in your bag.] 
 You search for it, careful not to disturb your DIY fix, and pull it out. You say a quick thanks to the universe that it didn&#39;t depart from you before you were able to fix your bag.
 This will make it so much easier to navigate in the dimmer light.
 You point your compass in the direction in of the river you saw, east and about 20 degrees north. You mark it for good measure, so you can find it again if you ever started waking astray.
@@ -579,7 +590,7 @@ Yeesh! Nevermind. Don&#39;t think about that. So pessimistic when you are litera
 Stay positive sunshine. Keep moving forward.
 
 
-(text-color: cyan)[[Persevere -&gt;Riverside From Cliffs]]</tw-passagedata><tw-passagedata pid="44" name="Upstream River with Compass" tags="" position="650,1800" size="100,100">You keep walking up the river. The dark has settled in earnest now, the moon rising high into the sky. You&#39;re grateful for the added light, but it&#39;s still hard to see the details around your path without shining your pitiful penlight around you.
+(text-color: cyan)[[Persevere -&gt;Riverside From Cliffs]]</tw-passagedata><tw-passagedata pid="44" name="Upstream River Night" tags="" position="675,1750" size="100,100">You keep walking up the river. The dark has settled in earnest now, the moon rising high into the sky. You&#39;re grateful for the added light, but it&#39;s still hard to see the details around your path without shining your pitiful penlight around you.
  
  Let&#39;s just hope that you don&#39;t run into any more creatures.
  
@@ -597,7 +608,7 @@ Eventually you are able to get the kindling to catch the branches. You can final
 Despite your aching feet, you know you need water more. You take your water bottle out and set it on your small fire to start boiling. You set the driftwood next to the fire to start drying out too. You gather more twigs and leaves for your fire, creating a little kindling pile next to you. You&#39;d rather not get up so often if you can help it, and a fire built on small things burns quickly. You are starting to get warm though, so that&#39;s a good sign. Despite its small, shaky stature it&#39;s still giving off quite a bit of warmth. Enough to keep the chill at bay. You look up at the stars. At least here with no light pollution you have something pretty to look at. Your water is starting to simmer, a good sign.
 You throw a bit more kindling onto the fire.
 
-(end of demo)</tw-passagedata><tw-passagedata pid="45" name="Cave Bat" tags="" position="575,1150" size="100,100">Disregarding your better judgement, you slowly creep towards the sound to find what can only be described as, probably the ugliest little group of bats that you have ever seen. 
+(text-color: cyan)[[Rest -&gt;End of Demo]]</tw-passagedata><tw-passagedata pid="45" name="Cave Bat" tags="" position="575,1150" size="100,100">Disregarding your better judgement, you slowly creep towards the sound to find what can only be described as, probably the ugliest little group of bats that you have ever seen. 
 
 You aren&#39;t even trying to be insulting. 
 
@@ -650,27 +661,7 @@ I don&#39;t suppose this is an undiscovered bat species that can like, play ches
 You sigh and try to take a breath. What do bats eat anyway? Like, fruits and bugs? sure. You remember reading that somewhere. You take out some of your dried fruit from your snack stash and toss it into the middle of the cave, a futile peace offering. You shift uncomfortably, staring at the fruit, untouched. Well, it is the middle of the day. They&#39;re probably sleeping. You should rest too.
 (set: $caveBat to true)
 
-(text-color: cyan) [[Rest Until Dusk -&gt;Nightfall]]</tw-passagedata><tw-passagedata pid="46" name="Upstream River No Compass" tags="" position="775,1800" size="100,100">You keep walking up the river. The dark has settled in earnest now, the moon rising high into the sky. You&#39;re grateful for the added light, but it&#39;s still hard to see the details around your path without shining your pitiful penlight around you.
- 
- Let&#39;s just hope that you don&#39;t run into any more creatures.
- 
- You haven&#39;t seen anything so far, which is very welcome after your little scare with the wolf. You still have your fingers crossed that it didn&#39;t run off to find its friends and bring them round for family weeknight dinner. You keep a close watch for any large bugs or ground critters too. God forbid you step on a scorpion or something and it&#39;s wraps.
- The best thing you can do is stay vigilant. Very vigilant. Sooooo vigilant. Which is also a very hard thing to do when you&#39;re bored out of your mind.
-Staring at the same scenery for ages isn&#39;t exactly stimulating. Your eyes are tired and strained from looking forward into the dark.
-And it&#39;s getting cold. What used to be a welcome gentle breeze now pricks at your exposed skin, making goosebumps travel up your arms and legs. The desert night is often cold and unforgiving. You really just cannot catch a break, can you? It may be time to stop and rest soon. Your aching feet enthusiastically agree. So does your throat, dry and parched once more.
-
-Well, might as well stop before the night gets even colder. If you&#39;re too uncomfortable it wil be impossible to get any rest. You walk a little further, and find a wide part of the riverbank to rest at. This will do nicely. You set your backpack down close to the riverside, and check the area for snakes or rodents or any insects. You can never be too careful about the spot where you choose to lay your head. 
-You look around for anything to burn. You&#39;re going to need a fire. Unfortunately you aren&#39;t really having much luck. A few dry twigs and grass here, some leaves there, and a nice piece of driftwood that is, regrettably, completely wet. You could dry it out, but that either requires at least a day of waiting or drying it out next to a fire -- a fire that you are currently having much difficulty starting. You keep looking around, walking up the riverbank. You&#39;re able to break off a few more branches of some shrubbery, but breaking off live twigs is a lot harder than you thought it would be. And fresh branches don&#39;t really burn particularly well, but whatever. Better than nothing.
-Who figured that just starting a fire would have you putting in so much work? At least the movement keeps you warm. You walk back to your makeshift campsite and start building the crappiest little fire imaginable. Not your fault, you&#39;re really making the best with what you have. Which is not a lot. You put the driest leaves and grasses in the center for kindling, placing the larger twigs around the outside. You take your flint and steel out of your bag and practice sparking a few times, before turning your attention back to the kindling. You say a small prayer as you spark it.
-The kindling smolders and smokes, and you blow on it, trying to get the larger twigs to catch. Feed more kindling, keep working it. 
-Eventually you are able to get the kindling to catch the branches. You can finally sit back. Your feet thank you profusely, as you lay back on the sand and relax your aching muscles. You feel as though you might sink into the sand of this riverbank and never ever get up again. The full force of your exhaustion is hitting you now. There&#39;s a knawing pain at the back of one of your heels, which you don&#39;t need to look at to know that its a nasty heel blister.
-
-Despite your aching feet, you know you need water more. You take your water bottle out and set it on your small fire to start boiling. You set the driftwood next to the fire to start drying out too. You gather more twigs and leaves for your fire, creating a little kindling pile next to you. You&#39;d rather not get up so often if you can help it, and a fire built on small things burns quickly. You are starting to get warm though, so that&#39;s a good sign. Despite its small, shaky stature it&#39;s still giving off quite a bit of warmth. Enough to keep the chill at bay. You look up at the stars. At least here with no light pollution you have something pretty to look at. Your water is starting to simmer, a good sign.
-You throw a bit more kindling onto the fire.
-
-
-
-(end of demo)</tw-passagedata><tw-passagedata pid="47" name="Walking From Oasis" tags="" position="525,1800" size="100,100">You feel as though you have been walking forever.
+(text-color: cyan) [[Rest Until Dusk -&gt;Nightfall]]</tw-passagedata><tw-passagedata pid="46" name="Walking From Oasis" tags="" position="575,1600" size="100,100">You feel as though you have been walking forever.
 Your feet ache and your backpack weighs heavier on your shoulders with each step. You have cramps in places you didn&#39;t even know could cramp.
 And it&#39;s getting cold to boot. Uncomfortably cold. You cross your arms over one another, trying to conserve what little body heat you can despite your t-shirt and shorts. What had previously kept you as cool as possible during the heat of the midday has turned against you, doing next to nothing to shield your skin from the cold drafts that blow at you from over the sand dunes. 
 Your motivation is retained by the fact that travelling upstream has turned your small stream into a steady river. Although you haven&#39;t seen any signs of civilization yet, the river serves as visual proof that you are making progress -- and the reassurance is nice.
@@ -687,13 +678,70 @@ Very many in rapid succession.
 
 You never were very patient. Just this once your brutish nature is rewarded, and one of the sparks catch on your tinder and start to smoke it. You blow, probably a bit too hard, honestly, trying to get the tinder to light the other leaves and branches. This is WAY more technical than you thought it would be. Who knew fire would be so picky? You put more tinder into the pile half-hazardly. It smokes slowly, letting off grey billows of pungent smoke. Then, a tiny flame. You smile a little, then quickly get up again. A tiny flame needs more fuel for it to catch for real. You break off more bush branches, placing them over the top. They crackle and pop and smoke, but the fire catches them and you have a small but steady flame going. 
 Theres much to be said about how often you need to get up to grab more small twigs, but seeing as you aren&#39;t finding an axe any time soon, you&#39;re fairly limited to what you have the strength to break off, or what you can find on the ground. Despite your hunger and exhaustion diminishing your strength, you still manage to get some good peices. It will keep you warm enough for comfort, and you can boil some water now. 
-You remove your water bottle&#39;s lid, put some cloth over the top to filter the sediments, and fill it at the river.  Then you stick it upright into the center of the flames, feeding the fire around the edges. 30 minutes is the recommended length, you think. Your fire is small, and still getting hot, so you suspect it might be quite some time. 
+You remove your water bottle&#39;s lid, and stick it upright in the center of the flames to boil. Your fire is small, and still getting hot, so you suspect it might be quite some time. 
 
 So you wait. 
 
-You wash your face and arms of sand and dirt, and lie down next to your fire. There is a large margin between the warm fire and the icy chill of the river water. It feels nice, like coming back inside from playing in the snow all day. Your water is starting to simmer, which is great. You put some more kindling down. The downtime is welcome after what has probably been the longest day of your life.
+You wash your face and arms of sand and dirt in the river, recoiling at the shock of the cold water against your skin. You sit down near the amber glow of your fire to dry off. There is a large margin between the warm fire and the icy chill of the river water left on your skin. It feels nice, like coming back inside from playing in the snow all day. Your water is starting to simmer, little bubbles rising to the top lazily. A promising sign for clean water yet to come. 
+You put some more kindling down. The downtime is welcome after what has probably been the longest day of your life.
 
-(end of demo)</tw-passagedata><tw-passagedata pid="48" name="Riverside From Cliffs" tags="" position="900,1800" size="100,100"></tw-passagedata><tw-passagedata pid="49" name="Downstream from Riverbank" tags="" position="1025,1800" size="100,100"></tw-passagedata><tw-passagedata pid="50" name="Stream from Dunes" tags="" position="400,1800" size="100,100">You walk for a long time, half unsure of where you&#39;re going. But luck smiles down on you today. Or perhaps a divine being of some sort fixing to turn you into some mortal jester. At the moment you don&#39;t really care which.
+(text-color:cyan)[[Rest -&gt;End of Demo]]</tw-passagedata><tw-passagedata pid="47" name="Riverside From Cliffs" tags="" position="825,1750" size="100,100">Against most odds, you manage to find your way to the riverbank. The water runs clean and clear, and your thirst eats away at you. It&#39;s been far too long since you&#39;ve had any water, even with the cave protecting you from the heat. You clean your face and hands in the cool water. Then, you put your shirt over the opening of your water bottle, and dip it into the river. The cloth of your t-shirt filters out the larger river sediment, and you can boil the water over a fire to clean it. 
+Right.
+Fire.
+Probably important, no?
+Your feet are already protesting, despite the comparatively short journey. But it&#39;s not time to rest yet. You screw the cap back onto your water bottle and look around you. The river is wide and rushes downward through the dunes. Walking downstream should get you to a town, or at least an ocean which can lead you to a town. So you begin to walk again, using your penlight to watch around your feet. Across the river large grazing animals drink from the riverside, watching you with scrutinizing gazes. You do your very best not to bother them, but any small noise or surprising movement sends them running off back across the expanse of the desert. A scathing review of your human clumsiness. Despite your annoying of the local wildlife population, your journey downriver is relatively uneventful. Like, boringly uneventful. 
+You look ahead of you and down at your feet to prevent any tripping or spraining of ankles, walking forward in a steady rhythm. It does not take long for the monotony to get to you. The sun keeps setting lower, and a chill is starting to settle over the sands. Your feet ache. Your shoulders ache. Your head aches. You&#39;re just like, full of aches at this point. And the cold keeps getting colder. Pushing you to rub your hands over your arms in a futile effort to generate some body heat. 
+Your thin t-shirt (which is now damp, thanks to the river), and shorts kepts you cool during the hot day, but now they serve to your detriment, leaving your skin exposed to the sting of night air. Your feet nag at you, the soreness getting harder and harder to ignore.
+The air around you progressively gets colder, sapping your motivation. 
+You&#39;ve been walking for what feels like eons. You look up at the sky. The moon has risen high in the sky, and all the stars are out. If you had to make a guess, you&#39;d say that its getting pretty close to the middle of the night, if your watch was working, it would probably say something close to 12 or 1 am. The thought of sleep calls to you, but you hesitate at the prospect of loosing valuable travel time while the temperature is comfortable. You rub your arms once more. Okay, maybe not comfortable. More like kind of tolerable as opposed to completely unbearable. Still, the fact that the temperature keeps dropping tells you it probably won&#39;t remain &#39;kind of tolerable&#39; for much longer.
+Maybe you //should// stop and get a fire going. Who knows how long it could take, and besides, you still haven&#39;t had any water. You survey the area around you. Across the water a few foxes scamper around the bank, looking for rodents or large insects, surely. Besides the foxes, you don&#39;t see much. Small beetles that won&#39;t bother you any (probably), no scorpions or snakes, or larger animals.
+You shrug. This will do, not like it can get much better. You set down your bag and stretch your arms. Your shoulders pop aggressively, finally free of the extra weight of your supplies after what must&#39;ve been many hours. You straighten out your posture and sigh. Your cramping muscles are relieved of most of their tension, relaxing back into a more natural position.
+Your feet unfortunately will have to wait a little longer. You resolve to not be on your feet for any longer than you have to. There&#39;s some shrubbery here, and a small peice of dry drift wood on the sand. Good kindling. You gather what you can, making a dry grass bundle for a fire starter. You pile your kindling together in a misshapen heap, and search through your bag for your flint and steel. You&#39;ve never really needed to use it until now, so let&#39;s hope you don&#39;t screw this up. Unlikely anyway, how hard can it be to hit two metal plates together? If the neaderthals could do it so can you. You practice a bit until you can consistently produce some sparks, then get to work on catching your firestarter. 
+
+It takes a few tries, and you maybe might have accidentally singed your fingertips. But fire you make. Your twigs and driftwood eventually catch, burning steadily. You take out your water bottle, unscrew the cap, and set it upright in the flames to boil. The amber glow of the fire radiates heat onto your cold-laden extremidies. You scoot closer to the fire&#39;s edge, warming as much of yourself as you can. The air smells like soot and pungent smoke, but you can&#39;t find it in you to care. Your water is starting to simmer in your water bottle. 
+Part of you wants to take the water bottle off the fire now and drain its contents, but you restrain yourself. Waterborne pathogens are SO not worth it. You redirect your energy on building a small pile of kindling that you can feed into the flames as the night rolls on. The less that you have to get up the better. Your sore feet wholeheartedly agree. You toss a few more twigs onto the flames, and stare up at the sky as you wait.
+ 
+(text-color: cyan)[[Rest -&gt;End of Demo]]</tw-passagedata><tw-passagedata pid="48" name="Downstream from Riverbank" tags="" position="1025,1750" size="100,100">You.
+Are.
+So.
+Bored.
+
+Perhaps you were too optimistic that you would somehow find a town in one day of walking. Considering the average human walks about 2 miles per hour at a leisurely pace, and you have no clue how far away you are from the nearest town, you&#39;re starting to see how that maybe was a whimsical pipe dream. 
+Your body aches persistently. Your feet protest movement with every forward step. Your shoulders have gone numb underneath your backpack straps. 
+You&#39;re so tired of the monotonous landscape of sand and more sand that it feels as though your brain may just crash through the front of your skull Kool-Aid man style in a daring escape attempt. 
+Or maybe its the eye strain from looking at the horizon that&#39;s the source of your headache. You decide it doesn&#39;t really make a difference. You take another small sip from your water bottle. You know you&#39;re nearing the end of your water, because everytime you lift to drink you can hear the river rocks resettling. Hopefully when you stop for the night you can wash out your water bottle and boil some water clean. The natural mineral flavor profile of //eau-de-rivière// is not exactly to your taste. The thought of stopping feels like a cruel taunt when the only sound you&#39;ve heard for the past several hours is rushing river water and the //pat, crunch// of your soles on the riverbank. 
+Your penlight has stayed out, doing little to fight against the shrinking daylight. 
+You&#39;re lucky that the moon is out tonight too. You can only imagine how horribly dark it would be if you didn&#39;t have the safety net of moonlight to help guide your path. You note down &#39;put a larger flashlight in your hiking bag&#39; as number 3 on the major priorities list, right after &#39;don&#39;t die&#39; and &#39;get out of the goddamn desert&#39;.
+Living, escaping, better flashlight. 
+Feels appropriate, no?
+
+
+
+
+
+You //cannot// be so bored that you&#39;ve started telling yourself jokes to pass the time. You refuse to let this situation turn you into a mediocre stand up comedian. Get ahold of yourself man. 
+Too wrapped up in your thoughts, you don&#39;t see the rock sticking out of the sand. The toe of your fabric tennis shoes bend around it and before you have time to react, you feel your body weight shift into a collision-bound path with the ground infront of you. 
+
+
+Ouch. 
+You forgot how much landing on the sand with impact hurts. 
+Bunch of tiny pricks radiate over the skin of your arms and the palms of your hands.
+If you didn&#39;t know any better you would think you were being bitten by a thousand tiny insects. 
+Somewhere behind you, your left ankle throbs angrily. You must have rolled it over the rock. 
+Just fantastic. 
+You hoist yourself back upward with your stinging palms and sit upward. Loose sand inside your shirt falls out over your legs and onto the riverbank. Some amazing luck you&#39;ve got, first you get mysteriously transported to some remote desert, //and// you have sand in places you&#39;ll never get it back out of to boot. 
+You brush yourself free of as much sand as you can and turn your attention to your ankle. Okay, it&#39;s not so bad. You roll your ankle around to test your mobility. It protests with an angry pulling pain up your calf -- but it won&#39;t incapacitate you. You check for swelling. Not too much. If you were back home your mom would&#39;ve gotten you an ice pack from the freezer and told you to pay more attention to where you were going.
+
+
+You miss your mom.
+She&#39;s probably worried about you.
+
+
+
+You shake your head and get back up on your feet, testing your ankle&#39;s weight bearing capacity. You&#39;re able to put almost all your weight on it semi-comfortably before you need to ease up. It could be so much worse, frankly. Imagine if you //broke// your ankle out here? Talk about roll the end credits. 
+Actually, nevermind. Don&#39;t manifest it. Part of you feels like you should try to keep moving a little further, but you hesitate thinking about your ankle. You would also rather not make it worse.
+
+(text-color: cyan)[[Rest -&gt;End of Demo]]</tw-passagedata><tw-passagedata pid="49" name="Stream from Dunes" tags="" position="375,1750" size="100,100">You walk for a long time, half unsure of where you&#39;re going. But luck smiles down on you today. Or perhaps a divine being of some sort fixing to turn you into some mortal jester. At the moment you don&#39;t really care which.
 The water is a very, very welcome sight. You come to the side of a steady stream, slowly tapering downward through the sand. It probably leads underground to a basin if you head downstream. The head of the river must be ahead of you. You begin to travel up the river, watching out for other animals. Keep your pen light out too, you&#39;re really starting to need it as the light level continues to drop. If it weren&#39;t for the clear skies and the moon being out, you probably wouldn&#39;t have been able to see at all.
 
 You walk for what feels like eons, with nothing to keep you company save for the rhythmic sound of your shoes falling on the sand, one after another. 
@@ -727,13 +775,20 @@ H.
 CHRIST.&#39;&#39;//]
 You have never seen such a horrific sight in your entire life. This is undoubtably the worst thing ever. Worse than that nightmare you had when you were five. Worse than the monster that lived in your closet. 
 
-Worse than your mom when you accidentally fried her work laptop with 16 computer viruses trying to pirate a movie that was 6.99 on Amazon Prime.
+Worse than your mom when you accidentally fried her work laptop with 16 computer viruses trying to pirate a movie that was 6.95 on Amazon Prime.
+
 It&#39;s huge and hairy and grotesquely optimized for speed and probably jumping. 
+
 Dear God, 
 why did you create this and put it in front of me? 
-Sincerily, definitely very far from your strongest soldier. Eugh it moved. It moved it moved. You take an aprehensive step back. It doesn&#39;t help. Only now does it cross your mind that there&#39;s a decent chance that its also poisonous. Just amazing. 
+Sincerily, 
+definitely very far from your strongest soldier. 
+
+//Eugh// it moved. It moved it moved. You take an aprehensive step back. 
+It doesn&#39;t help. 
+Only now does it cross your mind that there&#39;s a decent chance that its also poisonous. Just amazing. 
 All alone in the desert, Western (or maybe Eastern, who knows) showdown with the stupid spider that probably cameoed for a Stephen King movie. 
-(text-color: yellow)[[! -&gt;Spider]]</tw-passagedata><tw-passagedata pid="51" name="Spider" tags="" position="450,1975" size="100,100">Going straight to the top of the list of most humiliating things you have ever admitted in your young spry life, you have never ever felt more helpless than now, staring down a spider on the desert sand that&#39;s about half the size of your shoe.
+(text-color: yellow)[[! -&gt;Spider]]</tw-passagedata><tw-passagedata pid="50" name="Spider" tags="" position="450,1925" size="100,100">Going straight to the top of the list of most humiliating things you have ever admitted in your young spry life, you have never ever felt more helpless than now, staring down a spider on the desert sand that&#39;s about half the size of your shoe.
 You find yourself hopelessly defensless to boot (haha, get it?), with not a broom, nor vaccum cleaner, nor flamethrower in sight. You start stepping around carefully. Jesus it better not be following you.
 You accidentally step too close, and in a comically horrific sequence that surely will live behind your eyelids, the spider makes a hissing noise and stands up on its back legs, waving its front legs in the air infront of it.
 The sound of sheer terror that escapes your mouth is not one that you were previously familiar with. 
@@ -755,7 +810,7 @@ Okay, on second thought, it&#39;s just cold. Colder than you would&#39;ve expect
 
 You set down your backpack (after scanning the area thoroughly for anymore scary spiders), and find your flint and steel. Have you ever used this? No! but literally how hard could it be? Right? I mean, come on. Hit the shiny rock on the other rock, spark spark, bob&#39;s your uncle. Great. You look around the vegetation on the river side, trying to find anything worth burning. You kick yourself mentally for your lack of consideration around the rarity of wood, when palm trees are basically shaped like one big stick with a fancy hat. Nevertheless, you manage to gather an unimpressive managerie of dried leaves and bushy branches, and you start to build a small fire for yourself.
 
-(end of demo)</tw-passagedata><tw-passagedata pid="52" name="Untitled Passage" tags="" position="600,2100" size="100,100"></tw-passagedata><tw-passagedata pid="53" name="Untitled Passage 1" tags="" position="600,2250" size="100,100"></tw-passagedata><tw-passagedata pid="54" name="Untitled Passage 2" tags="" position="600,2400" size="100,100"></tw-passagedata><tw-passagedata pid="55" name="Untitled Passage 3" tags="" position="600,2550" size="100,100"></tw-passagedata><tw-passagedata pid="56" name="Untitled Passage 4" tags="" position="450,2550" size="100,100"></tw-passagedata><tw-passagedata pid="57" name="Untitled Passage 5" tags="" position="750,2550" size="100,100"></tw-passagedata><tw-passagedata pid="58" name="Untitled Passage 6" tags="" position="425,2700" size="100,100"></tw-passagedata><tw-passagedata pid="59" name="Untitled Passage 7" tags="" position="300,2600" size="100,100"></tw-passagedata><tw-passagedata pid="60" name="Untitled Passage 8" tags="" position="600,2700" size="100,100"></tw-passagedata><tw-passagedata pid="61" name="Untitled Passage 9" tags="" position="775,2700" size="100,100"></tw-passagedata><tw-passagedata pid="62" name="Untitled Passage 10" tags="" position="525,2875" size="100,100"></tw-passagedata><tw-passagedata pid="63" name="Untitled Passage 11" tags="" position="250,2800" size="100,100"></tw-passagedata><tw-passagedata pid="64" name="Untitled Passage 12" tags="" position="675,2875" size="100,100"></tw-passagedata><tw-passagedata pid="65" name="Untitled Passage 13" tags="" position="850,2875" size="100,100"></tw-passagedata><tw-passagedata pid="66" name="Untitled Passage 14" tags="" position="575,3150" size="100,100"></tw-passagedata></tw-storydata>
+(text-color: cyan)[[Rest -&gt;End of Demo]]</tw-passagedata><tw-passagedata pid="51" name="Untitled Passage" tags="" position="700,2075" size="100,100"></tw-passagedata><tw-passagedata pid="52" name="Untitled Passage 1" tags="" position="700,2250" size="100,100"></tw-passagedata><tw-passagedata pid="53" name="Untitled Passage 2" tags="" position="700,2400" size="100,100"></tw-passagedata><tw-passagedata pid="54" name="Untitled Passage 3" tags="" position="700,2550" size="100,100"></tw-passagedata><tw-passagedata pid="55" name="Untitled Passage 4" tags="" position="550,2550" size="100,100"></tw-passagedata><tw-passagedata pid="56" name="Untitled Passage 5" tags="" position="850,2550" size="100,100"></tw-passagedata><tw-passagedata pid="57" name="Untitled Passage 6" tags="" position="525,2700" size="100,100"></tw-passagedata><tw-passagedata pid="58" name="Untitled Passage 7" tags="" position="400,2600" size="100,100"></tw-passagedata><tw-passagedata pid="59" name="Untitled Passage 8" tags="" position="700,2700" size="100,100"></tw-passagedata><tw-passagedata pid="60" name="Untitled Passage 9" tags="" position="875,2700" size="100,100"></tw-passagedata><tw-passagedata pid="61" name="Untitled Passage 10" tags="" position="625,2875" size="100,100"></tw-passagedata><tw-passagedata pid="62" name="Untitled Passage 11" tags="" position="350,2800" size="100,100"></tw-passagedata><tw-passagedata pid="63" name="Untitled Passage 12" tags="" position="775,2875" size="100,100"></tw-passagedata><tw-passagedata pid="64" name="Untitled Passage 13" tags="" position="950,2875" size="100,100"></tw-passagedata><tw-passagedata pid="65" name="Untitled Passage 14" tags="" position="675,3150" size="100,100"></tw-passagedata><tw-passagedata pid="66" name="End of Demo" tags="" position="725,1950" size="100,100">This is the end of the demo :]. Thanks for Playing!</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
